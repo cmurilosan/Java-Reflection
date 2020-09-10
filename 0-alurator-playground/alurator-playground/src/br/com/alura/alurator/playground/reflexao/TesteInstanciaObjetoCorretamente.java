@@ -9,7 +9,7 @@ public class TesteInstanciaObjetoCorretamente {
 	
 	public static void main(String[] args) throws ClassNotFoundException, 
 	NoSuchMethodException, SecurityException, InstantiationException, 
-	IllegalAccessException, IllegalArgumentException, InvocationTargetException {
+	IllegalAccessException, IllegalArgumentException {
 		
 		Class<SubControle> subControleClasse1 = SubControle.class;
 		
@@ -17,14 +17,22 @@ public class TesteInstanciaObjetoCorretamente {
 		
 		Class<?> controleClasse1 = Class.forName("br.com.alura.alurator.playground.controle.Controle");
 		
-		Constructor<SubControle> constructorSubControle = subControleClasse1.getDeclaredConstructor();
+		try {
+			controleClasse1.getDeclaredConstructor().newInstance();
+		} catch (InvocationTargetException e) {
+			e.printStackTrace();
+		}
 		
-		System.out.println(constructorSubControle);
+//		controleClasse1.newInstance();
 		
-		constructorSubControle.setAccessible(true);
-		Object subControle = constructorSubControle.newInstance();
-		
-		System.out.println(subControle);
+//		Constructor<SubControle> constructorSubControle = subControleClasse1.getDeclaredConstructor();
+//		
+//		System.out.println(constructorSubControle);
+//		
+//		constructorSubControle.setAccessible(true);
+//		Object subControle = constructorSubControle.newInstance();
+//		
+//		System.out.println(subControle);
 	}
 
 }

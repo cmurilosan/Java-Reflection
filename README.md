@@ -15,4 +15,10 @@
  
  ## 02 - Criação de objetos com Constructor
  - Criando objetos corretamente
-
+ - A vantagem do Constructor.newInstance()
+ - Criação de objetos na prática
+ - Resumo:
+   - Por que o newInstance() da classe Class<T> foi descontinuado a partir do JDK 9.
+   - Para que serve e como criar objetos da classe Constructor<T>.
+   - As vantagens do newInstance() da classe Constructor<T>.
+   - Possibilidades no uso de uma instância da classe Constructor<T>.

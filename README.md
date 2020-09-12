@@ -22,3 +22,14 @@
    - Para que serve e como criar objetos da classe Constructor<T>.
    - As vantagens do newInstance() da classe Constructor<T>.
    - Possibilidades no uso de uma instância da classe Constructor<T>.
+
+## 03 - Executando métodos e boas práticas
+- Mantendo a legibilidade do código
+- Invocação de métodos sem parâmetros
+- Invocação de métodos sem parâmetros na prática
+- Resumo:
+  - Para que serve e como criar objetos da classe Method.
+  - Como invocar um método sem parâmetro representado por um objeto da classe Method.
+  - Possibilidades no uso de uma instância da classe Method.
+  - Boas prática no desenvolvimento com a API de Reflection.
+  - Criação de uma DSL (Linguagem de Domínio Específico, ou do tempo em inglês Domain-Specific Language) para do design e legibilidade ao trabalhar com a API de    Reflection.

@@ -35,6 +35,11 @@
   - Criação de uma DSL (Linguagem de Domínio Específico, ou do tempo em inglês Domain-Specific Language) para do design e legibilidade ao trabalhar com a API de    Reflection.
   
 ## 04 - Executando métodos com parâmetros
+- Invocação de métodos com parâmetros
+- Invocação de métodos com parâmetros na prática
+- Filtrando métodos
+- Finalizando a invocação de métodos com parâmetros
+- Resumo:
   - Filtrar um método de acordo com seu nome e tipo de parâmetros que recebe.
   - Como invocar um método com parâmetro representado por um objeto da classe Method.
   - Verificar a quantidade de parâmetros que um método recebe.

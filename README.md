@@ -33,3 +33,11 @@
   - Possibilidades no uso de uma instância da classe Method.
   - Boas prática no desenvolvimento com a API de Reflection.
   - Criação de uma DSL (Linguagem de Domínio Específico, ou do tempo em inglês Domain-Specific Language) para do design e legibilidade ao trabalhar com a API de    Reflection.
+  
+## 04 - Executando métodos com parâmetros
+  - Filtrar um método de acordo com seu nome e tipo de parâmetros que recebe.
+  - Como invocar um método com parâmetro representado por um objeto da classe Method.
+  - Verificar a quantidade de parâmetros que um método recebe.
+  - Obter o nome de um método.
+  - Obter e manipular um array de parâmetros que um método recebe.
+  - Habilitar o Java a ler o nome original dos parâmetros de métodos utilizando Reflection, a partir do JDK 8.

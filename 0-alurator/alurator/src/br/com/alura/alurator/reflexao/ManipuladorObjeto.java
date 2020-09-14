@@ -23,17 +23,19 @@ public class ManipuladorObjeto {
 		// 3) Lançar uma RuntimeException caso nenhum método seja encontrado.
 		
 		Stream<Method> metodos = Stream.of(instancia.getClass().getDeclaredMethods());
-		Method metodoSelecionado = metodos.filter(metodo -> metodo.getName().equals(nomeMetodo))
-				&& metodo.getParameterCount() == params.values().size()
-				&& 
-		.orElseThrow(() -> new RuntimeException("Metodo não encontrado!"));
-		try {
-			Method metodo = instancia.getClass().getDeclaredMethod(nomeMetodo);
-			return new ManipuladorMetodo(instancia, metodo);
-		} catch (NoSuchMethodException | SecurityException e) {
-			e.printStackTrace();
-			throw new RuntimeException(e);
-		}
+		Method metodoSelecionado = metodos.filter(metodo -> 
+				metodo.getName().equals(nomeMetodo)
+				&&    metodo.getParameterCount() == params.values().size()
+				&& Stream.of(metodo.getParameters())
+				.allMatch(param -> 
+                params.keySet().contains(param.getName())
+                && params.get(param.getName()).getClass().equals(param.getType())
+				)
+				)
+				.findFirst()
+				.orElseThrow(() -> new RuntimeException("Metodo não encontrado!"));
+		
+		return new ManipuladorMetodo(instancia, metodoSelecionado, params);
 	}
 
 }

@@ -46,3 +46,11 @@
   - Obter o nome de um método.
   - Obter e manipular um array de parâmetros que um método recebe.
   - Habilitar o Java a ler o nome original dos parâmetros de métodos utilizando Reflection, a partir do JDK 8.
+  
+## 05 - Lidando com Excessões
+- Lidando com exceções e boas práticas
+- Resumo:
+  - Utilidade das exceções na API de Reflection.
+  - Utilidade da importante exceção InvocationTargetException.
+  - Como obter a exceção original lançada ao executar um método ou construtor.
+  - Tratamento customizado de exceções importantes.

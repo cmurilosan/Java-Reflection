@@ -85,3 +85,11 @@
   - O que são meta anotações.
   - Definir o momento em que a anotação deverá ser levada em consideração.
   - Definir em quais partes do código pode-se utilizar as anotações criadas.
+
+## 08 - Reflection e anotações
+- Anotações e Reflexão
+- Anotaçes e Reflexão na prática
+- Resumo:
+  - As classes `Class<T>`, `Constructor<T>`, `Method` e `Field` e outras da *API de Reflection* disponibilizam métodos para verificar se determinada parte do código Java utiliza alguma anotação.
+  - Como obter as anotações utilizadas no código Java a partir da API de Reflection.
+  - Obter os valores das anotações a partir de API de Reflection.

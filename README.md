@@ -66,3 +66,4 @@
 
 ## 06 - Avançando com Reflection
 - Manipulação de atributos
+- Manipulação de atributos na prática

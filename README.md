@@ -54,3 +54,8 @@
   - Utilidade da importante exceção InvocationTargetException.
   - Como obter a exceção original lançada ao executar um método ou construtor.
   - Tratamento customizado de exceções importantes.
+  
+# Estudo sobre Reflection parte 2: Anotações e Injeção de Dependências
+
+## 06 - Avançando com Reflection
+- Manipulação de atributos

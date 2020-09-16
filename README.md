@@ -74,3 +74,14 @@
   - Obter o valor de um atributo.
   - Atribuir valor a um atributo.
   - Obter os modificadores de acesso de um atributo.
+  
+## 07 - Anotações, metadados no Java
+- Criando anotações
+- Criando anotações na prática
+- Resumo:
+  - O que são metadados.
+  - O que são anotações.
+  - Como criar anotações.
+  - O que são meta anotações.
+  - Definir o momento em que a anotação deverá ser levada em consideração.
+  - Definir em quais partes do código pode-se utilizar as anotações criadas.

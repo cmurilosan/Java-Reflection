@@ -67,3 +67,10 @@
 ## 06 - Avançando com Reflection
 - Manipulação de atributos
 - Manipulação de atributos na prática
+- Resumo:
+  - Formas de obter e listar atributos de uma classe.
+  - Diferença entre os métodos getFields(), getDeclaredFields(), getField(String nome) e getDeclaredField(String nome).
+  - Como obter o nome de um determinado atributo de classe.
+  - Obter o valor de um atributo.
+  - Atribuir valor a um atributo.
+  - Obter os modificadores de acesso de um atributo.

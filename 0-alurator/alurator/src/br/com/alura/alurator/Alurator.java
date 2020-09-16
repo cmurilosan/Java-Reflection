@@ -3,13 +3,13 @@ package br.com.alura.alurator;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Map;
 
+import br.com.alura.alurator.conversor.ConversorXML;
 import br.com.alura.alurator.protocolo.Request;
 import br.com.alura.alurator.reflexao.Reflexao;
 
 public class Alurator {
 	
 	private String pacoteBase;
-	private Object invoca;
 
 	public Alurator(String pacoteBase) {
 		this.pacoteBase = pacoteBase;
@@ -42,7 +42,11 @@ public class Alurator {
 							+ metodo.getDeclaringClass().getName() + ".\n\n");
 					throw new RuntimeException("Erro no método!");
 				})
-				.invoca();
+				.invocar();
+		
+		System.out.println(retorno);
+		
+		retorno = new ConversorXML().converte(retorno);
 			
 		return retorno;
 	}

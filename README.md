@@ -1,4 +1,4 @@
-# Estudo sobre Reflection
+# Estudo sobre Reflection parte 1 - Entendendo a Metaprogramaço
 
 - Bibliotecas como Hibernate, Spring ou CDI usam por trás dos panos
 - Como a linguagem e seu programa funciona em tempo de execução
@@ -56,6 +56,13 @@
   - Tratamento customizado de exceções importantes.
   
 # Estudo sobre Reflection parte 2: Anotações e Injeção de Dependências
+- A tecnologia que bibliotecas como Hibernate, Spring ou CDI usam por trás dos panos
+- Como a linguagem e seu programa funciona em tempo de execução
+- Código usando Class, Constructor, Method, Field e muito mais
+- Como criar a própria biblioteca código
+- Código mais dinâmico com a metaprogramação
+- O que são metadados e anotações
+- Inversão de controle e injeção de dependência
 
 ## 06 - Avançando com Reflection
 - Manipulação de atributos

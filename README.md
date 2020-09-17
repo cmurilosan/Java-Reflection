@@ -100,3 +100,14 @@
   - O que vem a ser inversão de controle e sua utilidade.
   - Sobre injeção de dependência e sua utilidade.
   - O que é e como implementar um container de inversão de controle.
+  
+## 10 - Generics
+- Melhorando a DI
+- Verificando compatibilidade de tipos
+- Tipos genéricos
+- Resumo
+  - A necessidade de verificar a compatibilidade entre os tipos passados para o container.
+  - Como implementar a verificação de compatibilidade com e sem a utilização da API de Reflection.
+  - O que são tipos genéricos no Java e a sua utilidade.
+  - O que são wildcards de tipos genéricos e suas variações: Upper Bounded Wildcards, Unbounded Wildcards e Lower Bounded Wildcards.
+  - Refatoração do container de IoC para utilizar tipos genéricos e obter feedback da IDE em tempo de desenvolvimento sobre os tipos passados ao container.

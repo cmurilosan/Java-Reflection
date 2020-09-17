@@ -93,3 +93,10 @@
   - As classes `Class<T>`, `Constructor<T>`, `Method` e `Field` e outras da *API de Reflection* disponibilizam métodos para verificar se determinada parte do código Java utiliza alguma anotação.
   - Como obter as anotações utilizadas no código Java a partir da API de Reflection.
   - Obter os valores das anotações a partir de API de Reflection.
+  
+## 09 - Injeção de dependências
+- Inversão de controle e injeção de dependências na prática
+- Resumo:
+  - O que vem a ser inversão de controle e sua utilidade.
+  - Sobre injeção de dependência e sua utilidade.
+  - O que é e como implementar um container de inversão de controle.

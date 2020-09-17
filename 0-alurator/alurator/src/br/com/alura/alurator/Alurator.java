@@ -1,6 +1,5 @@
 package br.com.alura.alurator;
 
-import java.lang.reflect.InvocationTargetException;
 import java.util.Map;
 
 import br.com.alura.alurator.conversor.ConversorXML;
@@ -8,8 +7,6 @@ import br.com.alura.alurator.ioc.ContainerIoC;
 import br.com.alura.alurator.protocolo.Request;
 import br.com.alura.alurator.reflexao.ManipuladorObjeto;
 import br.com.alura.alurator.reflexao.Reflexao;
-import br.com.alura.estoque.dao.ProdutoDao;
-import br.com.alura.estoque.dao.ProdutoDaoMock;
 
 public class Alurator {
 	

@@ -52,7 +52,25 @@ public class ContainerIoC {
 	}
 
 	public void registra(Class<?> tipoFonte, Class<?> tipoDestino) {
-		// TODO Auto-generated method stub
+		boolean compativel = verificaCompatibilidade(tipoFonte, tipoDestino);
+		if(!compativel) throw new ClassCastException("Não é possível resolver " + tipoFonte + " para " + tipoDestino.getName());
+		mapaDeTipos.put(tipoFonte, tipoDestino);
+	}
+
+	private boolean verificaCompatibilidade(Class<?> tipoFonte, Class<?> tipoDestino) {
+//		boolean compativel;
+//		if(tipoFonte.isInterface()) {
+//			compativel = Stream.of(tipoDestino.getInterfaces())
+//					.anyMatch(interfaceImplementada -> interfaceImplementada.equals(tipoFonte));
+//		} else {
+//			compativel = tipoDestino.getSuperclass().equals(tipoFonte)
+//					|| tipoDestino.equals(tipoFonte);
+//		}
+//		return compativel;
+		
+		
+		// VERIFICAR COMPATIBILIDADE COM API DE REFLECTION
+		return tipoFonte.isAssignableFrom(tipoDestino);
 		
 	}
 
